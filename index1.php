@@ -1,0 +1,168 @@
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Napconic Visuals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css style.css" />
+    
+  </head>
+  <body>
+    <div class="container1">
+      <div class="navbar">
+        <img src="LOGOS/transpa.png" class="logo" />
+
+        <div class="nav">
+          <nav>
+            <ul>
+              <li><a href="#home" class="btn"> Home</a></li>
+              <li><a href="#services"  class="btn"> Services</a></li>
+              <li><a href="#contact" class="btn"> Contact</a></li>
+              <li><a href="#about" class="btn"> About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="#home" id="home">
+      Home
+
+      <h1>Hi , We're <br /></h1>
+      <h2>Nap<span>conic</span></h2>
+      <a href="//instagram.com/napconic">
+        <button class="view-btn">View Portfolio</button>
+      </a>
+      <a href="http://localhost/login/login.php">
+        <button class="wwu-btn">Work with us</button>
+      </a>
+      <!--HERE IS WHERE I ADDED A ROW OF PHOTOS-->
+      <div class="gallery">
+        <article class="card">
+          <figure>
+          <img src="LOGOS/napconic-5169.jpg" alt="potrait">
+        <figcaption>
+          <h3> At the UON bridge potrait</h3>
+        </figcaption>
+          </figure>
+          </article>
+          <article class="card">
+            <figure>
+              <img src="LOGOS/IMG_5356.jpg" alt="Street potrait" >
+              <figcaption>
+                <h3> On the street potrait</h3>
+              </figcaption>
+            </figure>
+          </article>
+        <article class="card">
+          <figure>
+            <img src="LOGOS/IMG_3855.jpg" alt="Street potrait" >
+          <figcaption>
+            <h3> Matwana Potrait</h3>
+          </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="LOGOS/IMG_0101.jpg" alt="POTRAIT" />
+            <figcaption>
+              <h3> Boy in Spring time</h3>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+      <!--i shall write the services section here-->
+      <section>
+        <div class="#services" id="services">
+<div class="container3">
+  <h3> Services</h3>
+  <div class="row service"></div>
+  <div class=" col-mid-3 text-center"></div>
+  <div class="services">  
+<h4> Potrait <span> Photography</span></h4>
+<p> We offer potrait sessions</p>
+  </div>
+</div>
+    </div>
+      </section>
+    <!--i shall write down the Contact section here-->
+    <section>
+     
+      <div class="#contact" id="contact">
+<div class="container2">
+  <h3>Contact Us</h3>
+  <div class="ContactInfo">
+    <div class="box">
+      <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+      <div class="text">
+        <h4>Address</h4>
+        <p> Eden Court Utawala</p>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="icon"><i class="fa-solid fa-phone"></i>
+      </div>
+      <div class="text">
+        <h4>Phone</h4>
+        <p>0789029604</p>
+    </div>
+    </div>
+
+    <div class="box">
+      <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+      </div>
+      <div class="text">
+        <h4>Email</h4>
+        <p>bugahpaulo@gmail.com</p>
+        </div>
+        </div>
+
+        <div class="box">
+          <div class="icon"><i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="text">
+           <h4>Instagram</h4>
+         <a class="social-icon" href= "https://instagram.com/napconic">
+          <h5>Instagram</h5> </a> 
+          
+        </a></p>
+        </div>
+    </div>
+  </div>
+    </section>
+    <!--this section will have the services we o-->
+    <!--this section will have the about-->
+    <section>
+     
+      <div class="#about" id="about">
+        <div class="container3">
+          <div class="card1">
+            <div class="card-inner">
+              <div class="front">
+                <h2> Napconic</h2>
+                <p>Freelance Photographer / Filmmaker , Nairobi. </p>
+              </div>
+              <div class="back">
+                
+                <p> I am a profesional Photographer and filmmaker based in Nairobi,Kenya.<br></p>
+                <p> I started photography after High school and i had planned to do this,<br>
+                  because i really liked when i saw my fellow classmates having good pictures of themselves,<br>
+                  that had been taken by Professional photographers. </p>
+                  <p>It has proved to be a good source of income from my talents as people do apprecite my work.</p>
+            </div>
+          </div>   
+</div>
+</div>
+      </div>
+    </section>
+
+  </body>
+</html>
