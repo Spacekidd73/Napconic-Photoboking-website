@@ -12,7 +12,51 @@ body {
     background-size: cover;
     height: 100vh;
     width: 100%;
+    position: absolute;
+    font-family: Barlow;
+    overflow-x: hidden;
+}
 
+.banner {
+    background-image: url(LOGOS/IMG_5313-Edit.jpg);
+    background-position: center;
+    border-radius: 11px;
+    font-family: Barlow;
+    background-size: contain;
+    align-items: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.banner_2 {
+    background-image: url(LOGOS/IMG_6389.jpg);
+    background-size: cover;
+    /* Ensure the image covers the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Don't repeat the image */
+    height: 400px;
+    /* Fixed height for the banner */
+    color: white;
+    /* Text color */
+    display: flex;
+    /* Use flexbox to center content */
+    flex-direction: column;
+    /* Stack text vertically */
+    justify-content: center;
+    /* Center the content vertically */
+    align-items: center;
+    /* Center the content horizontally */
+    margin-top: 55px;
+    /* Center the text */
+    border-radius: 11px;
+}
+
+.banner_2 :hover {
+    transform: scale(1.15);
+    cursor: pointer;
 }
 
 section {
@@ -56,11 +100,14 @@ button {
 .gallery {
     display: flex;
     gap: 13px;
+    align-items: center;
+    margin-left: 22px;
 }
 
 .card {
     position: relative;
-    left: 66px;
+    padding-right: 55px;
+    padding-left: 12px;
     bottom: 36px;
     width: 260px;
     height: 280px;
@@ -68,6 +115,7 @@ button {
     transition: 1000ms all;
     transform-origin: centre left;
     outline: 8px;
+
     overflow: hidden;
 }
 
@@ -75,6 +123,7 @@ button {
     height: 280px;
     object-fit: cover;
     border-radius: 4px;
+    position: relative;
 }
 
 .card:hover {
@@ -112,10 +161,10 @@ button {
     width: 100%;
     top: 0;
     left: 0;
-    height: 5vh;
-    padding: 20px 100px;
+    height: 3vh;
+    padding: 27px 100px;
     background-color: transparent;
-    background-color: #cfd6e6;
+    background: linear-gradient(90deg, rgba(231, 230, 226, 1) 0%, rgba(159, 159, 159, 1) 47%, rgba(207, 214, 230, 1) 88%);
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -124,18 +173,27 @@ button {
 }
 
 .container3 {
-    width: 100%;
+
     top: 0;
     left: 0;
-    padding: 20px 100px;
-    font-size: 23px;
+    justify-content: space-between;
+    font-size: 22px;
     background-color: transparent;
     z-index: 100;
+    width: 80%;
+    /* Adjust width as needed */
+    max-width: 600px;
+    /* Optional max width */
+    padding: 75px;
+    /* Optional padding */
+    text-align: center;
+    /* Optional: center text inside section */
 }
 
 .container3 h3 {
     text-align: center;
-    color: #cfd6e6;
+    color: #ffffff;
+
 }
 
 .container3 h3::after {
@@ -143,13 +201,13 @@ button {
     display: block;
     height: 3px;
     width: 170px;
-    background: #008000;
-    margin: 20px auto 50px;
+    background: #f9e665;
+
 }
 
 .services p {
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
     color: #fff;
     padding: 20px;
 }
@@ -163,10 +221,9 @@ button {
 
 .card1 {
     width: 300px;
-    height: 433px;
-    margin-right: 562px;
-
-    margin-bottom: 54px;
+    height: 333px;
+    margin-right: 77px;
+    margin-top: 5px;
 }
 
 .card1:hover .card-inner {
@@ -213,7 +270,7 @@ button {
 }
 
 .front h2 {
-    font-weight: 500;
+    font-weight: 250;
     margin-bottom: 7px;
     margin-left: -122px;
 }
@@ -234,13 +291,16 @@ button {
     width: 100%;
     height: 7vh;
     display: flex;
-    margin: auto;
+    margin: 0;
     align-items: center;
+    position: fixed;
+    padding: 0;
+
 
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     height: auto;
     width: 220px;
     left: 0px;
@@ -269,19 +329,27 @@ h2 {
     text-align: center;
     margin: 20px 10px 80px;
     color: #ffffff;
-    font-size: 45px;
+    font-size: 33px;
 
+}
+
+h5 {
+    font-size: 42px;
 }
 
 .container2 h3 {
     color: #ffffff;
-    width: 100%;
+
     font-weight: 300;
     display: flex;
-    position: left;
-    margin-top: 60px;
-    margin-left: -366px;
-    font-size: 50px;
+    width: 80%;
+    /* Adjust width as needed */
+    max-width: 600px;
+    /* Optional max width */
+    padding: 20px;
+    /* Optional padding */
+    text-align: center;
+    /* Optional: center text inside section */
 }
 
 .container2 .ContactInfo {
@@ -328,26 +396,34 @@ h2 {
 }
 
 nav {
-
+    z-index: 1000;
+    top: 0;
+    left: 0;
     padding-left: 100px;
     flex: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 0px 20px;
-
+    justify-content: space-around;
+    justify-content: center;
 
 }
 
 nav ul li a {
     position: relative;
+    left: 120px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
     color: #000000;
-    margin-left: 80px;
+    padding-left: 80px;
 }
 
 
@@ -358,7 +434,7 @@ nav ul li a {
     top: 100%;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 2px;
     background: #fff;
     transition: .3s;
 }
